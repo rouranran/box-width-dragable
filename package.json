@@ -1,0 +1,42 @@
+{
+  "name": "box-width-dragable",
+  "private": false,
+  "version": "0.0.0",
+  "type": "module",
+  "author": "Rouranran",
+  "description": "vue3容器宽度拖拽组件",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/box-width-dragable.umd.cjs",
+  "module": "./dist/box-width-dragable.js",
+  "exports": {
+    "./dist/style.css": "./dist/style.css",
+    "./css": "./dist/style.css",
+    ".": {
+      "import": "./dist/box-width-dragable.js",
+      "require": "./dist/box-width-dragable.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@types/node": "^20.11.4",
+    "@vuepic/vue-datepicker": "^7.4.1",
+    "box-width-dragable": "^0.0.0",
+    "qrcode": "^1.5.3",
+    "swiper": "^11.0.5",
+    "terser": "^5.26.0",
+    "vue": "^3.3.11"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.5.2",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8",
+    "vue-tsc": "^1.8.25"
+  }
+}
